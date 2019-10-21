@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Company Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top shadow-lg">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse "  id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	    <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#terms">TERM & CONDITIONS</a></li>
+        <li><a href="index.html#contact">CONTACT US</a></li>
+        <li><a href="" data-toggle="modal" data-target="#myModal" >LOG IN<span class="glyphicon glyphicon-log-in"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="#home" class="jumbotron text-center " >
+	
+	<div class="container " style="text-align:justify;padding:5%;background-color:white;opacity:0.9;color:black">
+	  
+	  <h1 style="color:black">SIGN UP FORM</h1>
+	  <form action="" class="needs-validation" onsubmit="return checkform(this);">
+	    <hr>
+		
+	    <h2>Personal Information</h2>
+		<div class="form-group">
+		  <label for="uname">Name</label>
+		  <input type="text" class="form-control"  id="uname" placeholder="Enter your user name" name="uname" required>
+		</div>
+		<div class="form-group">
+		  <label for="uname">Mobile Number</label>
+		  <input type="number" class="form-control" id="mno" placeholder="Enter mobile number" name="mno" required>
+		</div>		
+		<div class="form-group">
+		  <label for="uname">Email</label>
+		  <input type="email" class="form-control"  id="email" placeholder="Enter your email" name="email" required>
+		</div>
+		
+		<hr>
+	    <h2>Company Information</h2>
+		<div class="form-group">
+		  <label for="uname">Comany Name</label>
+		  <input type="number" class="form-control" id="cname" placeholder="Enter your company name" name="mno" required>
+		</div>		
+		<div class="form-group">
+		  <label for="uname">Pin Code</label>
+		  <input type="number" class="form-control" onchange="getZip()"  id="pincode" placeholder="Enter your Pin Code" name="pincode" required>
+		</div>		
+		<div class="form-group">
+		  <label for="uname">State</label>
+		  <input type="text" class="form-control" id="cstate" placeholder="Enter your state" name="state" required>
+		</div>		
+		<div class="form-group">
+		  <label for="uname">District</label>
+		  <input type="text" class="form-control"  id="cdistrict" placeholder="Enter district" name="district" required>
+		</div>	
+		
+		<hr>
+	    <h2>Set Password</h2>	
+		<div class="form-group">
+		  <label for="pwd">Password</label>
+		  <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+		</div>
+		<div class="form-group">
+		  <label for="pwd">Confirm Password</label>
+		  <input type="password" class="form-control" id="cpwd" placeholder="Confirm password" name="cpswd" required>
+		</div>
+		<div class="form-group form-check">
+		  <label class="form-check-label">
+			<input class="form-check-input" type="checkbox" name="remember" required> I agree on Terms and Conditions
+		  </label>
+		</div>
+		
+		<!-- START CAPTCHA -->
+			<br>
+			<div class="capbox">
+
+			<div id="CaptchaDiv"></div>
+
+			<div class="capbox-inner">
+			Type the above number:<br>
+
+			<input type="hidden" id="txtCaptcha">
+			<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+
+			</div>
+			</div>
+             <!-- END CAPTCHA -->
+
+		<button type="submit" class="btn btn-primary">Submit</button>
+	  </form>
+	</div>
+
+
+</div>
+
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> xyz</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +9999999999</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> xyz.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
+		  <input class="form-control" id="mno" name="email" placeholder="Mobile number" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- login form -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content" style="background-color:opacity:1">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">LOGIN </h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body"  >
+		
+			<form action="" align="left">
+			  <div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" class="form-control" id="email" placeholder="email">
+			  </div>
+			  <div class="form-group">
+				<label for="pwd">Password</label>
+				<input type="password" class="form-control" id="pwd" placeholder="password">
+			  </div>
+			  <div class="form-group form-check">
+				<label class="form-check-label">
+				  <input class="form-check-input" type="checkbox"> Remember me
+				</label>
+				<label class="form-check-label" style="float:right">
+					<a class="form-check-input" > Forget Password ?</a>
+				</label>
+			  </div>
+			    <button align="center" class="btn btn-danger" type="submit">Login</button>
+			  
+			</form>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>
+	
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>
+
+<script type="text/javascript">
+
+	// Captcha Script
+
+	function checkform(theform){
+	var why = "";
+
+	if(theform.CaptchaInput.value == ""){
+	why += "- Please Enter CAPTCHA Code.\n";
+	}
+	if(theform.CaptchaInput.value != ""){
+	if(ValidCaptcha(theform.CaptchaInput.value) == false){
+	why += "- The CAPTCHA Code Does Not Match.\n";
+	}
+	}
+	if(why != ""){
+	alert(why);
+	return false;
+	}
+	}
+
+	var a = Math.ceil(Math.random() * 9)+ '';
+	var b = Math.ceil(Math.random() * 9)+ '';
+	var c = Math.ceil(Math.random() * 9)+ '';
+	var d = Math.ceil(Math.random() * 9)+ '';
+	var e = Math.ceil(Math.random() * 9)+ '';
+
+	var code = a + b + c + d + e;
+	document.getElementById("txtCaptcha").value = code;
+	document.getElementById("CaptchaDiv").innerHTML = code;
+
+	// Validate input against the generated number
+	function ValidCaptcha(){
+	var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+	var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+	if (str1 == str2){
+	return true;
+	}else{
+	return false;
+	}
+	}
+
+	// Remove the spaces from the entered and generated code
+	function removeSpaces(string){
+	return string.split(' ').join('');
+	}
+</script>
+
+</body>
+</html>

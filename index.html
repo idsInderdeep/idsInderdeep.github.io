@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Company Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar  navbar-fixed-top shadow-lg">
+	  <div class="container">
+
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#myPage">Logo</a>
+		</div>
+		
+		<div class="navbar-collapse"  id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#home" >HOME</a></li>
+			<li><a href="#about" >ABOUT</a></li>
+			<li><a href="#terms" >TERM & CONDITIONS</a></li>
+			<li><a href="#contact" >CONTACT US</a></li>
+			<li><a href="" data-toggle="modal" data-target="#myModal" >LOG IN<span class="glyphicon glyphicon-log-in"></span></a></li>
+			<li><a href="signup_form.html">SIGN UP <span class="glyphicon glyphicon-user"></span></a></li>		
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+<div id="home" class="jumbotron text-center" style="padding:18%" >
+  <h1>Company name</h1> 
+  <p>Post your business requirements</p>
+  <H1>BANNER</H1>  
+</div>
+
+<!-- Container (About Section) -->
+<div id="about" class="container-fluid">
+  <div class="row" style="text-align:justify">
+    <div class="col-sm-8">
+      <h2>About</h2><br>
+      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><button class="btn btn-default btn-lg">Get in Touch</button>
+	  
+    </div>
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-th-list logo"></span>
+    </div>
+  </div>
+  
+</div>
+
+<div  id="terms" class="container-fluid bg-grey" >
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo slideanim"></span>
+    </div>
+    <div class="col-sm-8"  style="text-align:justify">
+      <h2 ALIGN="CENTER">TERMS AND CONDITIONS</h2>
+      <h4>- Our mission lorem ipsum dolor sit amet<BR>- consectetur adipiscing elit <BR>- sed do eiusmod tempor incididunt ut labore et dolore magna aliqua <BR>- Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
+      <p><strong>PRIVACY POLICY :</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT US</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> xyz</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +9999999999</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> xyz.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required><br>
+		  <input class="form-control" id="mno" name="email" placeholder="Mobile number" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.5251753865764!2d77.1863078145599!3d28.64398979031426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0298aea9d1d7%3A0xa3cf9c8fed57688e!2sKarol+Bagh!5e0!3m2!1sen!2sin!4v1565722826706!5m2!1sen!2sin" width="80%" height="80%" frameborder="0" style="border:0" allowfullscreen></iframe>	  
+-->
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>
+
+
+<!-- login form -->
+
+  <!-- The Modal -->
+  <div class="modal fade" id="myModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content" style="background-color:opacity:1">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">LOGIN </h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body"  >
+		
+			<form action="" align="left">
+			  <div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="email" class="form-control" id="email" placeholder="email">
+			  </div>
+			  <div class="form-group">
+				<label for="pwd">Password</label>
+				<input type="password" class="form-control" id="pwd" placeholder="password">
+			  </div>
+			  <div class="form-group form-check">
+				<label class="form-check-label">
+				  <input class="form-check-input" type="checkbox"> Remember me
+				</label>
+				<label class="form-check-label" style="float:right">
+					<a class="form-check-input" > Forget Password ?</a>
+				</label>
+			  </div>
+			    <button align="center" class="btn btn-danger" type="submit">Login</button>
+			  
+			</form>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>
+	
+  </body>
+</html>
