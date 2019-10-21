@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Company Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+  .container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    width: 180px;
+    float: right;
+    background: #aafed6;
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+    background: #e8f6fe;
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}​​
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top shadow-lg">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse "  id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	    <li><a href="home.html">HOME</a></li>
+        <li><a href="upload_post.html"  style="background-color:#cf25aa;">UPLOAD POST</a></li>
+        <li><a href="post_status.html">POST STATUS</a></li>
+        <li><a  href="post_archive.html">POST ARCHIVE</a></li>
+        <li><a  href="post_favorite.html">POST FAVORITE</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>
+		<li><a  href="#">LOG OUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="#home" class="jumbotron text-center" style="background-color:white" >
+
+ <!-- Advertise area -->
+ <div class="row" style=";margin-bottom:1%">
+  <div class="col-md-12" style="background-color:">
+   <img src="images\pycon_banner_ad.jpg" width="100%" height="100px">
+  </div> 
+ </div>
+
+ <div class="row">
+  <div class="col-md-10" >
+   
+   
+<!-- UPLOAD POST PANEL -->
+ <h1 style="color:black">UPLOAD YOUR POST </h1>
+ <div class="row" style="color:black">
+ 
+  <!-- upload your post panel -->
+
+ 
+  <form action="" method="">
+ 
+   <!-- Target Location -->
+   <hr>
+  <h2>Enter the target location</h2>
+ 
+   <!-- STATE -->
+    <div class="col-md-4"style="padding:2%">
+     <label for="state">State</label>
+     <input type="text" placeholer="your state" id="state" name="state">
+	</div>
+	
+	<!-- DISTRICT -->
+	<div class="col-md-4" style="padding:2%">	
+     <label for="">District</label>
+     <input type="text" id="district" name="district">
+	</div>
+	
+	<!-- CATEGORY -->
+	<div class="col-md-4" style="padding:2%">
+	  <label for="">Select category</label>
+	  <br>&nbsp;
+	  <div class="form-group">
+	    <select style="width:100%;border:red 2px solid" class="form-control" id="sel1">
+		 <option selected disabled>CATEGORY</option>
+		 <option>A</option>
+		 <option>B</option>
+		 <option>C</option>
+	   </select>
+	  </div>
+	</div>
+
+   <!-- Target Location -->
+  <hr>
+  <h2>Enter the POST details</h2>
+ 
+  
+  <div class="row">
+   <div class="col-md-6">
+     <label for="">Title</label>
+     <input type="text" id="district" name="title">
+   </div>
+   <div class="col-md-6">
+     <label for="">Description</label><br>
+     <textarea style="width:100%;border:red 2px solid" type="textarea" id="description" name="description"></textarea>
+   </div>
+  </div>
+		
+  <div class="row">
+
+   <div class="col-md-12" style="padding:5%">
+    <button class="btn btn-primary" style="width:100%">UPLOAD</button>
+   </div>
+   
+  </div>
+  
+  </form>
+ 
+ </div>
+
+   
+   
+   
+ </div> 
+
+ <div class="col-md-2" >
+ 
+   
+   <div class="sideAds">
+    <img src="images/download.jpg" width="100%"  height="100%">
+   </div> 
+   <div class="sideAds">
+    <img src="images/neiman_marcus.gif" width="100%" height="100%">
+   </div>
+  
+   <div class="sideAds">
+    <img src="images/images.png" width="100%"  height="100%">
+   </div>   
+ 
+ 
+  </div>
+
+ </div>
+
+
+ 
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>  
+
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Company Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+  .container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    width: 180px;
+    float: right;
+    background: #aafed6;
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+    background: #e8f6fe;
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}​​
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+	<nav class="navbar navbar-default navbar-fixed-top shadow-lg">
+	  
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>                        
+		  </button>
+		  <a class="navbar-brand" href="#myPage">Logo</a>
+		</div>
+		
+		<div class="collapse navbar-collapse "  id="myNavbar">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a href="#" style="background-color:#cf25aa;">HOME</a></li>
+			<li><a href="upload_post.html">UPLOAD POST</a></li>
+			<li><a href="post_status.html">POST STATUS</a></li>
+			<li><a  href="post_archive.html">POST ARCHIVE</a></li>
+			<li><a  href="post_favorite.html">POST FAVORITE</a></li>
+			<li><a href="#">MY ACCOUNT</a></li>
+		    <li><a  href="#">LOG OUT</a></li>
+		  </ul>
+		</div>
+	  </div>
+	
+	</nav>
+
+<div id="#home" class="jumbotron text-center" style="background-color:white" >
+
+ <!-- Advertise area -->
+ <div class="row" style=";margin-bottom:1%">
+  <div class="col-md-12" style="background-color:">
+   <img src="images\pycon_banner_ad.jpg" width="100%" height="100px">
+  </div> 
+ </div>
+
+<div class="row">
+ <div class="col-md-10" >
+ 
+<!-- SEARCH PANEL -->
+ <form action="" method="">
+ 
+  <div class="row">
+ 
+  <!-- search heading -->
+   <h1 style="color:#cf25aa;">SEARCH POST </h1>
+   <HR>
+
+   <!-- STATE -->
+    <div class="col-md-4" >
+		
+	  <div class="form-group">
+	   <h2 >STATE</h2>
+	    <select class="form-control"style="width:100%;border:orange 2px solid" id="sel1">
+		 <option selected disabled>STATE</option>
+		 <option>DELHI</option>
+		 <option>PUNJAB</option>
+		 <option>UP</option>
+		 <option>MP</option>
+	   </select>
+	  </div>
+	 
+	</div>
+	
+	<!-- DISTRICT -->
+    <div class="col-md-4" >
+	  <div class="form-group">
+	   <h2>DISTRICT</h2>
+	    <select class="form-control" style="width:100%;border:green 2px solid" id="sel1">
+		 <option selected disabled>DISTRICT</option>		
+		 <option>GREATER NOIDA</option>
+		 <option>CENTRAL DELHI</option>
+		 <option>GB NAGAR</option>
+	   </select>
+	  </div>
+	 
+	</div>
+	
+	<!-- CATEGORY -->
+	<div class="col-md-4">
+	  <div class="form-group">
+	   <h2>CATEGORY</h2>
+	    <select class="form-control" style="width:100%;border:red 2px solid" id="sel1">
+		 <option selected disabled>CATEGORY</option>
+		 <option>A</option>
+		 <option>B</option>
+		 <option>C</option>
+	   </select>
+	  </div>
+	</div> 
+  </div>		
+
+ <div class="row">
+  <div class="col">
+   <button class="btn btn-warning"> SEARCH</button>
+  </div>
+ </div>
+</form>
+ 
+ 
+   
+ <div class="row">
+    
+  <!-- SUGGESTIONS -->
+  <hr>
+  <h2>SUGGESTIONS</h2> 
+  
+  <!-- POST -->
+ <div class="row" style="color:black">
+ 
+ <!-- CARD -->
+  <div class="col-md-12">   
+
+   <div class="card">
+		<div class="card-header" id="headingTwo1">
+			  <button class="btn btn-danger btn-block postTitle" data-toggle="collapse" data-target="#collapseTwo1" aria-expanded="false" aria-controls="collapseTwo1">
+                If you are an Amazing Software Engineer who wants to
+				make great money working at an amazing company
+				then keep reading!
+			  </button>
+		</div>
+		
+		<div id="collapseTwo1" class="collapse container-fluid" style="background-color:yellow;padding:2%"aria-labelledby="headingTwo1" data-parent="#accordion">
+		  <div class="card-body" >
+		  
+		   <div style="text-align:justify;">
+				
+				<h5><strong>TITLE : </strong>
+				  <u>
+				   If you are an Amazing Software Engineer who wants to
+				   make great money working at an amazing company
+				   then keep reading!
+				  </u>
+				</h5>
+				
+		   </div>
+		   
+		   <div style="text-align:justify;">
+		     <strong>DESCRIPTION :</strong>
+			   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+           </div>
+		   
+		   <div style="margin-top:2%">
+             <button style="float:left;margin-left:3px"  class="btn btn-info" data-toggle="modal" data-target="#companyModal">COMPANY INFO</button>
+	         <button style="float:left;margin-left:3px"  class="btn btn-info">ADD TO FAVORITE</button>
+			 <h5 style="float:right"><strong>POSTED ON : DD/MM/YYYY</strong></h5>
+		   </div>
+		   
+		 </div>
+		</div>
+	  </div>
+	</div>
+    
+  <!-- The Comapny Info Modal -->
+  
+  <div class="modal fade" id="companyModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content" style="background-color:opacity:1">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">COMPANY INFORMATION</h2>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" text-align="left">
+
+			  <table class="table">
+				<tbody>
+				  <tr>
+					<td><strong>COMPANY NAME  </strong></td>
+					<td>xyz pvt. ltd.</td>
+				  </tr>
+				  <tr>
+					<td><strong>CONTACT PERSON</strong></td>
+					<td>Mr. ABCD</td>
+				  </tr>
+				  <tr>
+					<td><strong>EMAIL</strong></td>
+					<td>dddooley@xyz.com</td>
+				  </tr>
+				  <tr>
+					<td><strong>CONTACT NUMBER</strong></td>
+					<td>XXXXX-YYYYY</td>
+				  </tr>
+				</tbody>
+			  </table>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>	 
+  
+ </div>
+
+  
+ </div> 
+</div> 
+ 
+ 
+ <div class="col-md-2" >
+    
+   <div class="sideAds">
+    <img src="images/neiman_marcus.gif" width="100%" height="100%">
+   </div>
+  
+   <div class="sideAds">
+    <img src="images/images.png" width="100%"  height="100%">
+   </div>   
+   <div class="sideAds">
+    <img src="images/download.jpg" width="100%"  height="100%">
+   </div>  
+ 
+  </div> 
+
+ </div>
+
+
+ 
+</div>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>  
+
+
+</body>
+</html>

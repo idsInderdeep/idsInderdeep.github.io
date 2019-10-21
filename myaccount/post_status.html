@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com -->
+  <title>Company Name</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+  .container {
+   height: auto;
+   overflow: hidden;
+}
+
+.right {
+    width: 180px;
+    float: right;
+    background: #aafed6;
+}
+
+.left {
+    float: none; /* not needed, just for clarification */
+    background: #e8f6fe;
+    /* the next props are meant to keep this block independent from the other floated one */
+    width: auto;
+    overflow: hidden;
+}​​
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top shadow-lg">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse "  id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+	    <li><a href="home.html">HOME</a></li>
+        <li><a href="upload_post.html" >UPLOAD POST</a></li>
+        <li><a href="post_status.html" style="background-color:#cf25aa;" >POST STATUS</a></li>
+        <li><a href="post_archive.html" >POST ARCHIVE</a></li>
+        <li><a href="post_favorite.html">POST FAVORITE</a></li>
+        <li><a href="#">MY ACCOUNT</a></li>		   
+		<li><a  href="#">LOG OUT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="#home" class="jumbotron text-center" style="background-color:white" >
+
+ <!-- Advertise area -->
+ <div class="row" style=";margin-bottom:1%">
+  <div class="col-md-12" style="background-color:">
+   <img src="images\pycon_banner_ad.jpg" width="100%" height="100px">
+  </div> 
+ </div>
+
+ <div class="row">
+  <div class="col-md-10" >
+   
+   
+<!-- POST STATUS PANEL -->
+ <h1 style="color:black">POST STATUS</h1><HR>
+ <div class="row" style="margin:2%;color:black">
+ 
+ </div>
+
+  <!-- STATUS-->
+  
+ <div class="row" style="color:black">
+  <div class="col-md-12">   
+ 
+  <!-- TABLE STATUS -->
+	<table class="table table-hover" style="padding:5%">
+		<thead>
+		  <tr >
+			<th >TITLE</th>
+			<th>DATE</th>
+			<th>VIEWS</th>
+			<th>POST VIEW</th>
+			<th>DELETE<th>
+		  </tr>
+		</thead>
+		<tbody style="text-align:left">
+		  <tr>
+			<td>STEEL WORKERS</td>
+			<td>06-10-2019</td>
+			<td>89</td>
+			<td><button class="btn btn-info" data-toggle="modal" data-target="#companyModal">view</button></td>
+			<td><button class="btn btn-danger" data-toggle="modal" data-target="#alertModal">remove</button></td>
+		  </tr>
+		   <tr>
+			<td>CODERS</td>
+			<td>03-03-2019</td>
+			<td>22</td>
+			<td><button class="btn btn-info" data-toggle="modal" data-target="#companyModal">view</button></td>
+			<td><button class="btn btn-danger" data-toggle="modal" data-target="#alertModal" >remove</button></td>
+
+		  </tr>
+		</tbody>
+	</table>
+  </div>
+ </div>
+	
+ </div> 
+ 
+ 
+ <div class="col-md-2" >
+    
+   <div class="sideAds">
+    <img src="images/neiman_marcus.gif" width="100%" height="100%">
+   </div>
+  
+   <div class="sideAds">
+    <img src="images/images.png" width="100%"  height="100%">
+   </div>   
+   <div class="sideAds">
+    <img src="images/download.jpg" width="100%"  height="100%">
+   </div>  
+ 
+  </div>
+ </div>
+
+
+ 
+</div>
+
+  <!-- The POst View Modal -->
+  
+  <div class="modal fade" id="companyModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content" style="background-color:opacity:1">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title">POST</h2>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" text-align="left">
+		  <div class="card-body" >
+		  
+		   <div style="text-align:justify;">
+				  <u>
+				   If you are an Amazing Software Engineer who wants to
+				   make great money working at an amazing company
+				   then keep reading!
+				  </u>
+				</h5>
+				
+		   </div>
+		   
+		   <div style="text-align:justify;">
+		     <strong>DESCRIPTION :</strong>
+			   Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              			 <h5 style="float:right"><strong>POSTED ON : DD/MM/YYYY</strong></h5>
+		   </div>
+		   
+		   <div>
+		   </div>
+		   
+		 </div>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>	
+  <!-- The POst View Modal -->
+  
+  <div class="modal fade" id="alertModal" style="z-index:9999;">
+    <div class="modal-dialog modal-md" >
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title" style="color:red">ARE YOU SURE YOU WANT TO DELETE THIS POST ?</h2>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body" align="center">
+		  <div class="card-body" >
+		   <button class="btn btn-danger ">DELETE</button>
+		 </div>
+		</div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+		  </div>
+		</div>
+	</div>	
+
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>Developed by Inderdeep Singh  </p>
+</footer>  
+
+
+</body>
+</html>
