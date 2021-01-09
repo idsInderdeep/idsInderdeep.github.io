@@ -25,7 +25,7 @@ function setup() {
         minWidth: 1200,
         minHeight: 700
       },
-      optional: [{ maxFrameRate: 40 }]
+      optional: [{ maxFrameRate: 5 }]
     },
     audio: false
   };	
