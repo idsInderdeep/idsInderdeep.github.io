@@ -25,7 +25,7 @@ function setup() {
         minWidth: 1200,
         minHeight: 700
       },
-      optional: [{ maxFrameRate: 4 }]
+      optional: [{ maxFrameRate: 10 }]
     },
     audio: false
   };	
@@ -71,7 +71,7 @@ function classifyPose() {
     }
     brain.classify(inputs, gotResult);
   } else {
-    setTimeout(classifyPose, 50);
+    setTimeout(classifyPose, 100);
   }
 }
 
