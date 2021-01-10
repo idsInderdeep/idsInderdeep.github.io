@@ -16,7 +16,7 @@ let pose;
 let skeleton;
 
 let brain;
-let poseLabel = "Y";
+let poseLabel = "LOADING MODEL";
 
 function setup() {
   let constraints = {
@@ -25,7 +25,7 @@ function setup() {
         minWidth: 1200,
         minHeight: 700
       },
-      optional: [{ maxFrameRate: 5 }]
+      optional: [{ maxFrameRate: 40 }]
     },
     audio: false
   };	
@@ -48,9 +48,9 @@ function setup() {
   }
   brain = ml5.neuralNetwork(options);
   const modelInfo = {
-    model: 'static/model1/model.json',
-    metadata: 'static/model1/model_meta.json',
-    weights: 'static/model1/model.weights.bin',
+    model: '/static/model1/model.json',
+    metadata: '/static/model1/model_meta.json',
+    weights: '/static/model1/model.weights.bin',
   };
   brain.load(modelInfo, brainLoaded);
 }
@@ -71,15 +71,15 @@ function classifyPose() {
     }
     brain.classify(inputs, gotResult);
   } else {
-    setTimeout(classifyPose, 100);
+    setTimeout(classifyPose, 50);
   }
 }
 
 function gotResult(error, results) {
   
-  if (results[0].confidence > 0.75) {
+  if (results[0].confidence > 0.92) {
     poseLabel = results[0].label.toUpperCase();
-  }
+  }else{poseLabel="_";}
   //console.log(results[0].confidence);
   classifyPose();
 }
@@ -126,5 +126,10 @@ function draw() {
   noStroke();
   textSize(80);
   textAlign(CENTER, CENTER);
+  
+  if(poseLabel=='L'){poseLabel="LEFT LEG TREE";}
+
+
   text(poseLabel, width / 2, height / 2);
+
 }
