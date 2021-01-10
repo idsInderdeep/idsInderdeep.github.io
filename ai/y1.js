@@ -25,7 +25,7 @@ function setup() {
         minWidth: 1200,
         minHeight: 700
       },
-      optional: [{ maxFrameRate: 10 }]
+      optional: [{ maxFrameRate: 2 }]
     },
     audio: false
   };	
@@ -49,8 +49,8 @@ function setup() {
   brain = ml5.neuralNetwork(options);
   const modelInfo = {
     model: '/static/model1/model.json',
-    metadata: '/static/model1/model_meta.json',
-    weights: '/static/model1/model.weights.bin',
+    metadata: 'static/model1/model_meta.json',
+    weights: 'static/model1/model.weights.bin',
   };
   brain.load(modelInfo, brainLoaded);
 }
