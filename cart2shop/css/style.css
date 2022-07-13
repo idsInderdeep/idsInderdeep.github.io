@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height:1500px;
+}
+
+.nav-alert{
+	background-color:black;
+	color:white;
+	font-size:15px;
+	padding:0.1%;
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+/* Navigation Start */
+nav{
+	border: 1px black bottom;
+}
+
+.home-navbar-menu{
+	position: relative;   
+}
+
+.menu-icon{
+	position: absolute;
+	opacity:1;
+	z-index:9;
+	margin:1%;
+}
+
+.overlay-navbar {
+  text-align:center;
+}
+/* Navigation End */
+
+/* Product Panel Start*/
+.banner-card{ 
+    margin:1%;
+	margin-top:100px;	
+}
+
+.product-card{ 
+    margin:1%;
+	text-align:center;	
+	margin-top:30px;
+}
+
+.product-img{
+    width:100%;
+	border:0px solid black;
+	border-radius:0%;
+}
+
+.product-category{
+	width:100%;
+	border:0px solid black;
+	border-radius:0%;
+	margin:1%;
+	
+}
+.product-panel{
+	border:0px solid black;
+	width:90%;
+	height:100%;
+	margin: 0 auto;
+	margin-bottom:2%;
+}
+
+.product-item{
+	width:95%;
+	margin-bottom:2%;
+}
+/* Product Panel End*/
+
+/* Navigation Links Start*/
+
+.tab-nav {	
+color:black;
+width:33%;
+font-size:12px;
+border-right:1px black solid !important;	
+}
+
+.tab-nav-wb {	
+color:black;
+width:33%;
+font-size:12px;
+border-right:0px black solid !important;	
+}
+
+
+td:hover {
+  color: black !important;	
+  border-bottom:2px black solid !important;
+  /*background-color:yellow !important;	*/
+}
+
+nav{
+	background-color:white;
+}
+
+
+
+nav a {
+  display: inline;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  background-color:black;
+  padding:0.5%;
+  font-size:12px;
+}
+nav a:hover {
+  color: black;
+  background-color:yellow;
+}
+.active-nav{
+	  color: black;
+  background-color:yellow;
+}
+
+/* Navigation Links End*/
