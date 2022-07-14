@@ -87,10 +87,14 @@ width:10%;
 font-size:12px;
 border-right:0px black solid !important;	
 }
+.tab-selected {
+  color: grey!important;	
+  border-bottom:2px black solid !important;
+}
 
 
 td:hover {
-  color: black !important;	
+  color: grey !important;	
   border-bottom:2px black solid !important;
   /*background-color:yellow !important;	*/
 }
