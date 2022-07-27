@@ -14,14 +14,13 @@
  
  <body>
 
-<!-- Navigation Start -->
+
+  <!-- Navigation Start -->
   <nav  class="rounded fixed-top"> 
 	   <div class="nav-alert" id="nav-alert">
 		 <marquee>GET 70% OFF ON ALL THE PRODUCTS FROM 1st JUNE to 30th JUNE</marquee>
 		 <div style="color:white;font-size:15px;" class="bi bi-x" onclick="getElementById('nav-alert').style.display='none';"></div>
 	   </div>	   
-
-	   
 	  
 	   <div class="overlay-navbar" style="margin: 0 auto;width:96%;margin-bottom:-1.2%;background-color:white;" >
 		   <div class="nav-alert bg-light" style="color:black;" >
@@ -33,11 +32,12 @@
 			   <p style="font-size:13px;margin-bottom:0px;">CART2SHOP.COM</p>
 			   
                <p style="margin: 0 auto;">
-			    <i class="bi bi-heart"></i>&nbsp;
-				<i class="bi bi-chat-left-text"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			    <i class="bi bi-heart"></i>&nbsp;&nbsp; 
+				<i class="bi bi-chat-left-text"></i>&nbsp;&nbsp; 
+				<i class="bi bi-info-circle"></i>
 			   </p>
 			   
-			   <div>
+			   <div>&nbsp; 	&nbsp; &nbsp; 
                 <i class="bi bi-whatsapp"></i>&nbsp; 
 				<i class="bi bi-facebook"></i>&nbsp; 
 				<i class="bi bi-instagram"></i>&nbsp;
@@ -50,7 +50,7 @@
 			<table class="table" style="border-color:black;">
 			  <thead>
 				<tr>
-				  <td scope="col" class="tab-nav  tab-selected" onclick="window.location='product_categories.html'">
+				  <td scope="col" class="tab-nav" onclick="window.location='product_categories.html'">
 				  <i class="bi bi-collection"  style="font-size:12px;"></i></i>
 				  PRODUCTS</td>
 				  <td scope="col" class="tab-nav">
@@ -59,6 +59,7 @@
 				  <td scope="col" class="tab-nav-wb">
 				  <i class="bi bi-star" style="font-size:12px;"></i>
 				  OFFERS</td>
+
 				</tr>
 			  </thead>
 			</table>		   
@@ -67,40 +68,75 @@
   </nav>
   <!-- Navigation End -->
  
-
   <!-- Banner Start -->
   <div class="banner-card"/>
- <!-- Banner End -->
-   <p style="margin-top:-1%;"><a href="index.html"><i class="bi bi-house-door-fill" style="color:grey;"></i></a> >
+  	<div class="dropdown">
+<a href="index.html"><i class="bi bi-house-door-fill" style="color:grey;"></i></a> >
    <a href="product_categories.html"><i class="bi bi-ui-checks-grid" style="color:grey;"></i></a> > 
     <a href="products.html"><i class="bi bi-square" style="color:grey;"></i></a> > 
-   SILK KURTIS
-   <i class="bi bi-caret-down-square-fill"></i></p> 
+	  <span class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+		SILK KURTI
+	  </span>
+	  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+		<li><a class="dropdown-item" href="products.html">SILK</a></li>
+		<li><a class="dropdown-item" href="#">COTTON</a></li>
+		<li><a class="dropdown-item" href="#">WOOLEN</a></li>
+		<li><a class="dropdown-item" href="#">INDO-WESTERN</a></li>
+	  </ul>
+	</div>
+ <!-- Banner End-->
+
   <!-- Cart Start -->
   <div class="product-card">
    <h4>~ SILK KURTIS ~</h4>
 
    <div class="row" >
 	   <div class="col-md-1">
-	      <div class="shadow-lg">
-				<img type="image/jpg" src="p4.jpg" class="product-img"/><hr/>
-				<img type="image/jpg" src="p4.jpg" class="product-img"/>
+	      <div>
+				<img type="image/jpg" style="width:100px" src="p4.jpg" class="product-img"/>  &nbsp; 
+				<img type="image/jpg" style="width:100px" src="p4.jpg" class="product-img"/>
+				<hr/>
 		  </div>	
 	   </div>
 	   <div class="col-md-5">
 	      <div class="shadow-lg">
-				<img type="image/jpg" src="p4.jpg" class="product-img" style="height:400px"/>
+				<img type="image/jpg" src="p4.jpg"  style="height:400px;width:100%"/>
 		  </div>	
 	   </div>
 	   <div class="col-md-6">
-	      <div class="product-panel shadow-lg">
-				<div>PUNJABI SILK KURTI<br/>
-				<div>Price: Rs. 400</div>
-				<div>Fabric: Silk</div>
-				<div>7 days return</div>
-				<div>Colors:</div>
-				<div>Pack: 5 qty</div>
-				<div>Add: 1 to 10</div>
+	      <div class=" shadow-lg">
+			
+				
+				<h5 class="bg-light">PUNJABI SILK KURTI</h5>
+			<div align="center">	
+				<div class="row">
+				  <div class="col-md-4">
+				   <h6> Price: Rs. 400</h6>
+				  </div>  
+				  <div class="col-md-4">
+				   <h6> Fabric: SILK</h6>
+				  </div> 
+				  <div class="col-md-4">
+				   <h6> Size: Medium</h6>
+				  </div> 
+				</div>
+				<div class="row">
+				  <div class="col-md-4">
+				   <h6> Pack of 10</h6>
+				  </div>  
+				  <div class="col-md-4">
+				   <h6> Size: Medium</h6>
+				  </div> 
+				  <div class="col-md-4">
+				   <h6> Delivery: Free</h6>
+				  </div> 
+				</div>				
+
+                <br/>
+				<div><b>Add: 1 to 10</b></div>
+				<br/>
+			</div>	
+				
 				<div style="background-color:black;color:white;width:100%;">ADD TO CART</div>
 		  </div>	
 	   </div>
@@ -116,10 +152,98 @@
   <!-- checkout cart -->
 	<div>
       <a style="position:fixed;bottom:10%;right:10px;margin:0;padding:5px 3px;" href="#">
-	    <button>CANCEL</button>
+	    <button class="btn btn-dark">PAY</button>
 	  </a>
 	</div>  
   <!-- checkout cart -->
+ 
+ 
+   
+  
+  <div class="product-card">	
+<h4><i class="bi bi-cart-dash"></i> CONTACT US </h4>
+<!-- Footer -->
+  <footer>
+	    <!-- condtions --> 
+		<div class="product-card">
+			
+			  <div class="row" align="left">
+				 
+				 <div class="col-md-2 mb-2">
+				   <h6>Product Service</h6>
+				   <a href="/contact">CONTACT US</a><br/>
+				   <a href="policy/refund.html">REFUND POLICY</a><br/>
+				   <a href="policy/shipping.html">SHIPPING POLICY</a><br/>
+				   <a href="policy/cancellation.html">CANCELLATION POLICY</a><br/>
+				   <a href="policy/terms.html">TERMS & CONDITIONS</a><br/>
+				   <a href="policy/privacy.html">PRIVACY POLICY</a><br/>
+				   <a href="https://workindulge.com/">WORKINDULGE</a></br>
+				 </div>		
+
+				 <div class="col-md-3 mb-2">
+				  <h6>About US</h6>
+				  <p style="text-align:justify"><b>GREAT DEALS POINT</b> IS A STARTUP MANAGED BY YOUNG MINDS TO DEAL IN WHOLESALE LADIES PRODUCTS LIKE LEGGINGS, SALWARS, PLAZOS, 
+				  JEGGINGS, KURTIES CROPTOPS, PLAZO SUIT, SKIRT KURTIES, NIGHTIES, MAXI, NIGHTWEAR  AND NIGHTSUIT ITEMS. WE PROVIDE OUR CUSTOMERS BUSINESS OPPORTUNITIEs TO START THEIR OWN BUSINESS BY COLLABORATING WITH US.
+				 
+				  </p>
+				 </div>
+
+				 <div class="col-md-3 mb-2">
+				  <h6>Location</h6>
+				  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.090867171214!2d77.2697009150831!3d28.65699778240816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd810196dd0d%3A0x60a9cb97004f7ab6!2sGreat%20Deals%20Point!5e0!3m2!1sen!2sin!4v1618146649596!5m2!1sen!2sin" 
+				  width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+				 </div>		 
+				 
+				 <div class="col-md-2 mb-2">
+				  <h6>For Business</h6>
+					<div class="input-group-append " >
+					  <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTlnvRx7OEUEFJ6DksTFQqMcOpGPQWLwKqxvpnpdmSRVPjNQ/viewform?usp=sf_link"
+					  class="btn btn-sm btn-dark mr-2 mb-2">CONTACT NOW</a>
+					</div>	
+				  <div>
+					<p style="text-align:left;"><b>Gmail:</b><br/><span style="font-size:10px">mandeepsingh.batra18@gmail.com<br/>workindulgeteam@gmail.com</span></p>
+					<p style="text-align:left"><b>Mobile:</b>
+					<br/>Order Helpline:<br/>9958446259<br/><br/>
+					Technical Support: <br/>8178967356</p>
+					<p style="text-align:left"><b>Address:</b><br/>1A, Great Deals Point, 5, Jheel Marg, Block 1a, Geeta Colony, Delhi, 110031</p>			
+				</div>
+								
+				 </div>   
+				 
+				 <div class="col-md-2 mb-2">
+				   <h6>Quick Links</h6>
+				   <a href="../">HOME</a><br/>
+				   <a href="../#thali">PRODUCTS</a><br/>
+				   <a href="">CONTACT US</a><br/>
+				   <a href="https://workindulge.com/">WORKINDULGE</a></br>
+				 </div>				 
+			  
+			  </div>    
+			  
+	  <div class="text-center">
+		© 2021 Copyright <a href="https://workindulge.com/" style="font-size:15px">GreatDealsPoint.com</a> <br/>
+		Product of <a href="https://workindulge.com/" style="font-size:15px">WorkIndulge.com</a>
+	  </div>
+		</div>
+
+
+
+		<!-- Copyright -->
+	  <div class="text-center" style="font-size:20px;">
+	   <a href="https://facebook.com/mandeepgarment/"  target="_blank" class="fa fa-facebook mr-3"></a>
+	   <a href="https://www.instagram.com/mandeepgarments/"  target="_blank" class="fa fa-instagram mr-3"></a>
+	   <a href="https://www.youtube.com/channel/UCwkPYiOKNEjpsKu6qUDpMww" target="_blank" class="fa fa-youtube mr-3"></a>
+	   <a href="https://wa.me/message/VWAGHLZD2DY5M1" target="_blank" class="fa fa-whatsapp"></a>
+	  </div>	
+	  
+
+
+</footer>
+<!-- Footer -->	
+	
+	</div>
+  
+ 
  
  </body>
  
